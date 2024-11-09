@@ -63,3 +63,5 @@
 - Add timestamp to userSchema
 - Add API level validations on PATCH request & Singup POST api
 - Data Sanitizing - Add API validation for each fields
+- Install Validator
+- Explore validator library function and use validator for password, email and photoUrl
