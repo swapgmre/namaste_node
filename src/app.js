@@ -10,7 +10,6 @@ app.post("/signup", async (req, res) => {
 
   try {
     const { firstName, lastName, emailId, password } = req.body;
-    console.log("Request Body:", req.body);
     const user = new User({ firstName, lastName, emailId, password });
     await user.save();
     res.send("User added successfully")
@@ -78,12 +77,11 @@ app.patch("/user", async (req, res) => {
   const userId = req.body.userId;
   const data = req.body;
   try {
-    await User.findByIdAndUpdate({ _id: userId }, data, { returnDocument: "after" });
-    console.log(data);
+    await User.findByIdAndUpdate({ _id: userId }, data, { returnDocument: "after", runValidators: true, });
     res.send("user updated successfully");
 
   } catch (err) {
-    res.status(400).send(`Something went wrong`);
+    res.status(400).send(`UPDATE FAILED : ${err.message}`);
   }
 })
 
