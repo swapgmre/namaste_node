@@ -65,4 +65,10 @@
 - Data Sanitizing - Add API validation for each fields
 - Install Validator
 - Explore validator library function and use validator for password, email and photoUrl
-- \*\*\*Never Trust req.body
+- ###Never Trust req.body
+
+- Validate data in SignUp API
+- Install bcrypt package
+- Create a PasswordHash using bcrypt.hash & save the user with encrypted password
+- Create login API
+- Validate Data and Compare passwords and throw errors if email or password is invalid
