@@ -85,3 +85,11 @@
 - Read about expiring cookies vs expiring tokens**\*\***
 - Create userSchema method to getJWT();
 - Create userSchema method to comparepassword(passwordInputByUser)
+
+- Explore tinder APIs -Explore data inside
+- Create a list of all API you can think of in DEV tinder
+- Group multiple routes under respective routers
+- Read documentation for express.Router
+- Create routes folder for managing auth, profile, request routers
+- Create authRouter, profileRouter, requestRouter
+- Import these routers in app.js
