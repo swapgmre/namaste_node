@@ -15,8 +15,6 @@ app.use("/", profileRouter);
 app.use("/", requestRouter);
 
 
-
-
 connectDB()
   .then(() => {
     console.log("Database Connection established...");
